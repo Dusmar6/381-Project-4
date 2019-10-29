@@ -1,5 +1,4 @@
 import numpy as np
-import matplotlib
 import matplotlib.pyplot as plt
 
 
@@ -31,7 +30,7 @@ fig1=plt.figure(1)
 plt.bar(b1,h1, width=barwidth, edgecolor=edgecolor) 
 
 #PLOT THE UNIFORM PDF 
-f=UnifPDF(1,3,b1) 
+f=UnifPDF(a,b,b1) 
 plt.plot(b1,f,'r') 
 
 #CALCULATE THE MEAN AND STANDARD DEVIATION 
