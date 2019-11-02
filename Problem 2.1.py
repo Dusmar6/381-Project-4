@@ -14,7 +14,7 @@ sig_x=np.std(x)
 
 print("Mu_x: = ", mu_x)
 
-print("Sig_x: = ", sig_x)
+print("Sig_x: = ", sig_x, '\n\n\n')
 
 
 # Generate the values of the RV X 
