@@ -41,6 +41,9 @@ def gaussian(mu,sig,z):
     f=np.exp(-(z-mu)**2/(2*sig**2))/(sig*np.sqrt(2*np.pi))   
     return f 
 
+plt.title('PDF of book stack height and comparison with Gaussian')
+plt.xlabel('Book stack heigh for n=5 books',fontsize=14)
+plt.ylabel('PDF',fontsize=14,)
 f=gaussian(mu_x*nbooks,sig_x*np.sqrt(nbooks),b1) 
 plt.plot(b1,f,'r') 
 

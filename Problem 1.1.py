@@ -26,6 +26,10 @@ barwidth=b1[1]-b1[0] # Width of bars in the bargraph
 plt.close('all')
 
 # PLOT THE BAR GRAPH 
+plt.title('Uniform Random Variable - PDF')
+plt.xlabel('Uniform distribution between 2 and 5',fontsize=14)
+plt.ylabel('Probability',fontsize=14,)
+
 fig1=plt.figure(1) 
 plt.bar(b1,h1, width=barwidth, edgecolor=edgecolor) 
 

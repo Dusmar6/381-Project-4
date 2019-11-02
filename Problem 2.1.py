@@ -43,6 +43,7 @@ b1=(be1+be2)/2
 barwidth=b1[1]-b1[0] # Width of bars in the bargraph 
 
 # PLOT THE BAR GRAPH 
+
 plt.close('all') 
 fig1=plt.figure(1) 
 plt.bar(b1,h1, width=barwidth, edgecolor=edgecolor) 
@@ -54,6 +55,9 @@ def gaussian(mu,sig,z):
     return f 
 
 f=gaussian(mu_x*nbooks,sig_x*np.sqrt(nbooks),b1) 
+plt.title('PDF of book stack height and comparison with Gaussian')
+plt.xlabel('Book stack heigh for n=1 books',fontsize=14)
+plt.ylabel('PDF',fontsize=14,)
 plt.plot(b1,f,'r') 
 
 mu_x=np.mean(X) 
