@@ -4,24 +4,10 @@ import matplotlib.pyplot as plt
 
 a=2.0  
 b=5.0 
-n=10000
-
-x= np.random.uniform(a,b,n) 
-
-#CALCULATE THE MEAN AND STANDARD DEVIATION 
-mu_x=np.mean(x) 
-sig_x=np.std(x) 
-
-print("Mu_x: = ", mu_x)
-
-print("Sig_x: = ", sig_x)
-
-
-
 
 # Generate the values of the RV X 
 N=10000
-nbooks=1
+nbooks=15
 
 mu_x=(a+b)/2    
 sig_x=np.sqrt((b-a)**2/12)  
@@ -58,3 +44,9 @@ def gaussian(mu,sig,z):
 f=gaussian(mu_x*nbooks,sig_x*np.sqrt(nbooks),b1) 
 plt.plot(b1,f,'r') 
 
+mu_x=np.mean(X) 
+sig_x=np.std(X) 
+
+print("Mu_x: = ", mu_x)
+
+print("Sig_x: = ", sig_x)

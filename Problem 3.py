@@ -1,7 +1,5 @@
-
-
-
-
+import numpy as np
+import matplotlib.pyplot as plt
 
 
 beta =50 #days

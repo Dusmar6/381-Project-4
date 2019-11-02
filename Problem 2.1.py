@@ -17,8 +17,6 @@ print("Mu_x: = ", mu_x)
 print("Sig_x: = ", sig_x)
 
 
-
-
 # Generate the values of the RV X 
 N=10000
 nbooks=1
@@ -58,3 +56,9 @@ def gaussian(mu,sig,z):
 f=gaussian(mu_x*nbooks,sig_x*np.sqrt(nbooks),b1) 
 plt.plot(b1,f,'r') 
 
+mu_x=np.mean(X) 
+sig_x=np.std(X) 
+
+print("Mu_x: = ", mu_x)
+
+print("Sig_x: = ", sig_x)

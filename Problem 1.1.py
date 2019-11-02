@@ -38,3 +38,6 @@ mu_x=np.mean(x)
 sig_x=np.std(x) 
 
 
+print("Mu_x: = ", mu_x)
+
+print("Sig_x: = ", sig_x)
