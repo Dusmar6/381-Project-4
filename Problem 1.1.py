@@ -1,12 +1,9 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-
-
 def UnifPDF(a,b,x):     
     f=(1/abs(b-a))*np.ones(np.size(x))     
     return f 
-
 
 a=2.0  
 b=5.0 
@@ -45,3 +42,7 @@ sig_x=np.std(x)
 print("Mu_x: = ", mu_x)
 
 print("Sig_x: = ", sig_x)
+
+print("Mu_x: = ", (a+b)/2)
+
+print("Sig_x: = ", ((b-a)**2)/12)

@@ -59,12 +59,14 @@ print("Mu_x: = ", mu_x)
 
 print("Sig_x: = ", sig_x)
 
-
 CDF = np.cumsum(h1 * barwidth)
 plt.bar(b1, CDF, width = barwidth, edgecolor = edgecolor)
 plt.title('CDF of Carton Life')
 plt.xlabel('Lifetime of one carton',fontsize=14)
 plt.ylabel('Prob. Density',fontsize=14,)
+#plt.grid(True, color='#dfdfdf', dashes=(1,2))
+#plt.yticks(np.arange(0,1.1,step=.1))
+
 
 plt.plot (b1, CDF, 'r')
 plt.show()
